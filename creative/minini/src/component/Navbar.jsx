@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 import React, {useState, useEffect} from 'react'
 import {Button} from './Button'
+import Bgm from './Bgm'
+
 
 
 function Navbar() {
@@ -23,6 +25,11 @@ function Navbar() {
     useEffect(() => {
         showButton()
     }, [])
+    
+
+
+
+
 
     window.addEventListener('resize', showButton)
     return (
@@ -34,6 +41,9 @@ function Navbar() {
                 </Link>
                 <div className="menu-icon" onClick= {handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                </div>
+                <div className='bgm-wrapper'>
+                <Bgm />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>

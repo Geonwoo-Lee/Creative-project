@@ -11,7 +11,7 @@
 }
 
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: transparent;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -20,6 +20,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+
   }
 
 .navbar-logo {
@@ -79,8 +80,7 @@
   }
   
 .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+    color: blanchedalmond;
   }
   
   .fa-bars {
@@ -94,6 +94,14 @@
   .menu-icon {
     display: none;
   }
+
+  .bgm-wrapper{
+    position: absolute;
+    left: 563px;
+    top: 17px;
+  }
+
+
   
   @media screen and (max-width: 960px) {
     .NavbarItems {

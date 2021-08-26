@@ -27,6 +27,13 @@
 .btn--medium{
     padding: 8px 20px;
     font-size: 20px;
+    color: white;
+    background-color: transparent;
+    animation: animate 2s linear infinite;
+    -webkit-background-clip: background;
+    -webkit-background-size: 500%;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    border-radius: 10%;
 }
 
 .btn--large{
