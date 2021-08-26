@@ -12,13 +12,11 @@ function Bgm() {
         setIsPlaying(!isPlaying)
     }
     return (
-        <div className= 'bgm-wrapper'>
+        <div>
             <i onClick= {handlePlaying} className = {isPlaying ? "fas fa-volume-up" : "fas fa-volume-mute"}/>
             <Sound
             url={BadGuy}
-            playStatus = {isPlaying ?  Sound.status.PLAYING : Sound.status.STOPPED}
-            />
-            
+            playStatus = {isPlaying ?  Sound.status.PLAYING : Sound.status.STOPPED}  />
         </div>
     )
 }

@@ -20,7 +20,6 @@
     position: sticky;
     top: 0;
     z-index: 999;
-
   }
 
 .navbar-logo {
@@ -45,6 +44,9 @@
     height: 80px;
     max-width: 1500px;
   }
+  .bgm{
+    position: relative;
+  }
   
 .fa-keyboard {
     margin-left: 0.5rem;
@@ -63,7 +65,7 @@
   }
   
   .nav-item {
-    height: 80px;
+    height: 10px;
   }
   
   .nav-links {
@@ -84,7 +86,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: #242424;
   }
   
   .nav-links-mobile {
@@ -159,7 +161,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #242424;
       font-size: 2rem;
     }
   
@@ -182,5 +184,9 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+    .bgm{
+      position: absolute;
+      right: 90%;
     }
   }

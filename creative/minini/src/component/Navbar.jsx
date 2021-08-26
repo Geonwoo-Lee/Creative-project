@@ -6,6 +6,7 @@ import Bgm from './Bgm'
 
 
 
+
 function Navbar() {
     const [click, setClick] = useState(false)
     const [button, setButton] = useState(true)
@@ -27,23 +28,19 @@ function Navbar() {
     }, [])
     
 
-
-
-
-
     window.addEventListener('resize', showButton)
     return (
         <div>
             <div className='navbar'>
                 <div className = 'navbar-container'>
+                <div className='bgm'>
+                  <Bgm/>
+                </div>
                 <Link  to="/" className="navbar-logo" >
                     Klevv <i className="far fa-keyboard"/>
                 </Link>
                 <div className="menu-icon" onClick= {handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-                </div>
-                <div className='bgm-wrapper'>
-                <Bgm />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
@@ -62,13 +59,14 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
+                    </li>
+                    <li className='nav-item'>
                         <Link to ='/sign-up' 
                         className='nav-links-mobile' 
                         onClick={closeMovbileMenu}>
                             Sign Up
                         </Link>
-                    </li>
-                    
+                    </li>                    
                 </ul>
                 {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
