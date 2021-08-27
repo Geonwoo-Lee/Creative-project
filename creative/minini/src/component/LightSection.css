@@ -5,6 +5,39 @@ video {
     position: fixed;
     z-index: -1;
   }
+
+  @keyframes moveInright{
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInleft{
+  0% {
+      opacity: 0;
+      transform: translateX(-8rem);
+  }
+
+  80%{
+      transform: translateX(1rem);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
   
   .light-container {
     /* background: url('../images/img-home.jpg') center center/cover no-repeat;  */
@@ -23,6 +56,8 @@ video {
     font-size: 50px;
     margin-top: -70px;
     text-shadow: 2px 2px black;
+    animation: moveInright;
+    animation-duration: 1s;
   }
   
   .light-container > p {
@@ -31,6 +66,10 @@ video {
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+      animation: moveInleft;
+      animation-delay: 0.65s;
+      animation-duration: 1s;
+      animation-fill-mode: backwards;
   }
   
 
